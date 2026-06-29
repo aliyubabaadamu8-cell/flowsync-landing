@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowSync — Deep Work for Distributed Teams</title>
+  <meta name="description" content="FlowSync helps remote teams protect focus time, reduce meeting overload, and ship work that matters." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav__logo" href="#" aria-label="FlowSync home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        FlowSync
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-menu" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+
+      <a class="btn btn--primary btn--sm nav__cta" href="#get-started">Start free trial</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="container hero__inner">
+
+        <div class="hero__text">
+          <p class="eyebrow">Productivity for remote teams</p>
+          <h1 id="hero-headline" class="hero__headline">
+            Your team's<br />
+            <em>best work</em><br />
+            starts with focus.
+          </h1>
+          <p class="hero__sub">
+            FlowSync carves protected focus blocks into your team's calendar, syncs async status in real time, and makes shipping feel effortless — not exhausting.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#get-started" id="get-started">Get started free</a>
+            <a class="btn btn--ghost" href="#how-it-works">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              See how it works
+            </a>
+          </div>
+          <p class="hero__proof">No credit card · Cancel any time · Loved by 4,200+ teams</p>
+        </div>
+
+        <!-- Signature element: breathing focus timer -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="focus-ring focus-ring--outer"></div>
+          <div class="focus-ring focus-ring--mid"></div>
+          <div class="focus-ring focus-ring--inner"></div>
+          <div class="focus-card">
+            <div class="focus-card__label">Deep work session</div>
+            <div class="focus-card__timer">47:12</div>
+            <div class="focus-card__team">
+              <span class="avatar" style="--i:0"></span>
+              <span class="avatar" style="--i:1"></span>
+              <span class="avatar" style="--i:2"></span>
+              <span class="avatar-count">+3 in flow</span>
+            </div>
+            <div class="focus-card__bar">
+              <div class="focus-card__bar-fill"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Floating stat chips -->
+      <div class="hero__stats container" aria-label="Key metrics">
+        <div class="stat-chip">
+          <strong>2.4×</strong>
+          <span>more deep work hours</span>
+        </div>
+        <div class="stat-chip">
+          <strong>61%</strong>
+          <span>fewer status meetings</span>
+        </div>
+        <div class="stat-chip">
+          <strong>18 min</strong>
+          <span>avg. daily time saved</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         LOGOS / SOCIAL PROOF
+    ═══════════════════════════════════════ -->
+    <section class="logos" aria-label="Trusted by teams at">
+      <div class="container">
+        <p class="logos__label">Trusted by teams at</p>
+        <ul class="logos__list" role="list">
+          <li><span class="logo-pill">Meridian Labs</span></li>
+          <li><span class="logo-pill">Stackwave</span></li>
+          <li><span class="logo-pill">Orbit Design</span></li>
+          <li><span class="logo-pill">Nova Systems</span></li>
+          <li><span class="logo-pill">Crestline AI</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURES
+    ═══════════════════════════════════════ -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">What FlowSync does</p>
+          <h2 id="features-heading">Built for the way distributed teams actually work</h2>
+          <p class="section-sub">Not another task manager. FlowSync is the operating layer between your calendar, your chat, and your people.</p>
+        </header>
+
+        <div class="features__grid">
+
+          <article class="feature-card feature-card--accent">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Focus Time Protection</h3>
+            <p>FlowSync reads your team's calendar and automatically blocks off uninterrupted work windows. Slack goes quiet. Meetings bounce. Everyone knows not to disturb.</p>
+            <ul class="feature-card__list">
+              <li>Smart calendar scanning</li>
+              <li>Auto do-not-disturb across tools</li>
+              <li>Shared focus-time visibility</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Async Status Sync</h3>
+            <p>Every team member gets a live status card — what they're working on, when they're available, and what's blocked. No more "quick syncs" just to find out where things stand.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Flow Analytics</h3>
+            <p>Weekly reports that show exactly how your team's time is spent — and where focus is being stolen. Data you can actually act on, not just stare at.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Integration Layer</h3>
+            <p>Works with the stack you already use. Slack, Google Calendar, Notion, Linear, GitHub — FlowSync sits quietly in the background connecting them.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Meeting Trim Tool</h3>
+            <p>Before any meeting lands on your calendar, FlowSync checks whether it should be a doc instead. Fewer meetings. The ones that survive actually matter.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Privacy by Default</h3>
+            <p>Your team's work is yours. No training on your data. SOC 2 Type II certified. GDPR compliant. The admin controls are clear and you can audit everything.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════ -->
+    <section class="how-it-works" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Setup in minutes</p>
+          <h2 id="hiw-heading">From signup to first flow session — under 10 minutes</h2>
+        </header>
+
+        <ol class="steps" role="list">
+          <li class="step">
+            <div class="step__number" aria-hidden="true">1</div>
+            <div class="step__content">
+              <h3>Connect your tools</h3>
+              <p>Link Google Calendar or Outlook, and your Slack workspace. Takes 90 seconds. No IT ticket required.</p>
+            </div>
+            <div class="step__visual step__visual--connect" aria-hidden="true">
+              <div class="mini-integration">
+                <span>📅</span> <span class="connector-line"></span> <span>🔗</span> <span class="connector-line"></span> <span>💬</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step">
+            <div class="step__number" aria-hidden="true">2</div>
+            <div class="step__content">
+              <h3>Set your team's rhythm</h3>
+              <p>Choose how many hours of protected focus time your team wants each day. FlowSync handles the scheduling negotiation automatically.</p>
+            </div>
+            <div class="step__visual" aria-hidden="true">
+              <div class="mini-slider">
+                <div class="mini-slider__track"><div class="mini-slider__thumb"></div></div>
+                <span>4 hrs focus / day</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step">
+            <div class="step__number" aria-hidden="true">3</div>
+            <div class="step__content">
+              <h3>Watch your team ship</h3>
+              <p>Protected blocks appear in everyone's calendar. Statuses update automatically. Your dashboard shows focus hours and team momentum in real time.</p>
+            </div>
+            <div class="step__visual" aria-hidden="true">
+              <div class="mini-dashboard">
+                <div class="mini-bar" style="--h: 60%"></div>
+                <div class="mini-bar" style="--h: 80%"></div>
+                <div class="mini-bar" style="--h: 55%"></div>
+                <div class="mini-bar" style="--h: 90%"></div>
+                <div class="mini-bar mini-bar--active" style="--h: 75%"></div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════ -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">What teams say</p>
+          <h2 id="testimonials-heading">Results teams actually talk about</h2>
+        </header>
+
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial testimonial--featured">
+            <p>"We cut our weekly meetings from 14 to 5 in the first month. Our engineers have real focus time now, and they can feel the difference. FlowSync didn't just save us hours — it changed how we think about work."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">SR</div>
+              <div>
+                <cite class="testimonial__name">Sara Reyes</cite>
+                <span class="testimonial__role">Engineering Manager, Stackwave</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"The async status cards alone were worth the switch. No more 'are you blocked?' Slack messages at 9pm. Everyone just knows."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">MO</div>
+              <div>
+                <cite class="testimonial__name">Marcus Osei</cite>
+                <span class="testimonial__role">Head of Product, Orbit Design</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"I was skeptical another tool could actually help. FlowSync is the first one that understands that the problem isn't tasks — it's time."</p>
+            <footer>
+              <div class="testimonial__avatar" aria-hidden="true">LK</div>
+              <div>
+                <cite class="testimonial__name">Leila Khoury</cite>
+                <span class="testimonial__role">Founder, Crestline AI</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PRICING
+    ═══════════════════════════════════════ -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Simple pricing</p>
+          <h2 id="pricing-heading">Pick the plan that fits your team</h2>
+          <p class="section-sub">All plans include a 14-day free trial. No credit card required to start.</p>
+        </header>
+
+        <div class="pricing__grid">
+
+          <div class="pricing-card">
+            <div class="pricing-card__tier">Starter</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-card__desc">For small teams just finding their rhythm.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>Up to 5 team members</li>
+              <li>2 hrs protected focus / day</li>
+              <li>Basic async status</li>
+              <li>Slack + Calendar integrations</li>
+              <li>Weekly summary report</li>
+            </ul>
+            <a class="btn btn--outline pricing-card__cta" href="#get-started">Start free</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Most popular</div>
+            <div class="pricing-card__tier">Pro</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">$12</span>
+              <span class="price-period">/ person / month</span>
+            </div>
+            <p class="pricing-card__desc">For teams serious about protecting deep work.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>Unlimited team members</li>
+              <li>Custom focus hour targets</li>
+              <li>Full async status suite</li>
+              <li>All integrations</li>
+              <li>Flow analytics dashboard</li>
+              <li>Meeting Trim Tool</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn--primary pricing-card__cta" href="#get-started">Start free trial</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-card__tier">Enterprise</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <p class="pricing-card__desc">For organizations that need compliance, custom contracts, and dedicated support.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>Everything in Pro</li>
+              <li>SSO / SAML</li>
+              <li>Custom data retention</li>
+              <li>SOC 2 audit reports</li>
+              <li>Dedicated CSM</li>
+              <li>SLA guarantee</li>
+            </ul>
+            <a class="btn btn--outline pricing-card__cta" href="mailto:enterprise@flowsync.io">Talk to sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════════ -->
+    <section class="final-cta" aria-labelledby="cta-heading">
+      <div class="container final-cta__inner">
+        <div class="cta-ring" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--light">Ready when you are</p>
+        <h2 id="cta-heading">Give your team the focus time they deserve.</h2>
+        <p>Join 4,200+ teams who've made deep work the default — not the exception.</p>
+        <div class="final-cta__actions">
+          <a class="btn btn--amber" href="#get-started">Start your free trial</a>
+          <a class="btn btn--ghost-light" href="mailto:hello@flowsync.io">Talk to a human first</a>
+        </div>
+        <p class="final-cta__footnote">14-day trial · No card needed · Cancel in one click</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="nav__logo" href="#" aria-label="FlowSync home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          FlowSync
+        </a>
+        <p>Deep work infrastructure for distributed teams.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Cookie settings</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom container">
+      <p>&copy; 2025 FlowSync, Inc. All rights reserved.</p>
+      <p>Made for teams who value their time.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
